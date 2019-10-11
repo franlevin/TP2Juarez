@@ -10,13 +10,17 @@ class Elemento
 {
     public:
         Elemento();
-        Elemento(string n);
+        Elemento(string t);
+        string getTipo();
+        void muestreo();
+        void setTipo(string);
         virtual ~Elemento();
-        string getNombre();
-        void setNombre(string);
 
     protected:
 
+        /* El atributo tipo lo heredan todos los elementos, de manera tal que al recorrer la lista de elementos
+        solo sea necesario consultar su tipo para indicarle al programa a que funciones debe llamar. */
+        string tipo;
         float posX;
         float posY;
 
