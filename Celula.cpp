@@ -2,19 +2,23 @@
 
 Celula::Celula()
 {
-    tamanio=0; cantEnzimas=0;cantProteinas=0;
-    materialGenetico= true; unicelular = true;
+    tamanio = 0;
+    cantEnzimas = 0;
+    cantProteinas = 0;
+    materialGenetico = true;
+    unicelular = true;
     estado = 'S';
 }
 
-Celula::Celula(int tam, int enz, int prot, bool matgen, bool uni, Estado estado)
+Celula::Celula()
 {
-    tamanio = tam;
-    cantEnzimas = enz;
-    cantProteinas = prot;
-    materialGenetico = matgen;
-    unicelular = uni;
-    this->estado= estado;
+    tamanio = 0;
+    cantEnzimas = 0;
+    cantProteinas = 0;
+    materialGenetico = 0;
+    unicelular = 0;
+    estado = ;
+
 }
 
 
