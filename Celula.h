@@ -3,8 +3,6 @@
 #include <iostream>
 using namespace std;
 
-typedef string Estado;
-
 class Celula
 {
     public:
@@ -22,12 +20,12 @@ class Celula
         int get_cantProteinas();
         bool get_materialGenetico();
         bool get_unicelular();
-        Estado get_Estado();
+        string get_Estado();
 
     private:
         int tamanio,cantEnzimas,cantProteinas;
         bool materialGenetico,unicelular;
-        Estado estado;
+        string estado;
 };
 
 #endif // CELULA_H
