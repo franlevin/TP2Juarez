@@ -1,8 +1,10 @@
 #include "Elemento.h"
 
+
+//Dudo que sea necesario un constructor por defecto
 Elemento::Elemento()
 {
-    nombre = "Graciela";
+    tipo = "Graciela";
 }
 
 Elemento::Elemento(string n)
@@ -10,9 +12,20 @@ Elemento::Elemento(string n)
     nombre = n;
 }
 
-string Elemento::getNombre()
+string Elemento::getTipo()
 {
-    return nombre;
+    return tipo;
+}
+
+void Elemento::setTipo(string t)
+{
+    tipo = t
+}
+
+
+void Elemento::Muestreo()
+{
+    //
 }
 
 Elemento::~Elemento()
