@@ -1,11 +1,10 @@
 #include "Anticuerpo.h"
 
-Anticuerpo::Anticuerpo()
+anticuerpo::anticuerpo()
 {
-    //ctor
+    pos_x = 0;
+    pos_y = 0;
 }
 
-Anticuerpo::~Anticuerpo()
-{
-    //dtor
-}
+int anticuerpo::get_posX(){
+    return pos_x}

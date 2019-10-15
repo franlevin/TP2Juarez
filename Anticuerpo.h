@@ -1,16 +1,17 @@
-#ifndef ANTICUERPO_H
-#define ANTICUERPO_H
+#include "Elementos.h"
+#include "Celula.h"
+#ifndef ANTICUERPO_H_INCLUDED
+#define ANTICUERPO_H_INCLUDED
 
-
-class Anticuerpo
+class anticuerpo: public Elemento
 {
-    public:
-        Anticuerpo();
-        virtual ~Anticuerpo();
 
-    protected:
-
-    private:
+public:
+        anticuerpo();
+        int get_posX();
+        int get_posY();
+        void set_posX(int);
+        void set_posY(int);
 };
 
-#endif // ANTICUERPO_H
+#endif // ANTICUERPO_H_INCLUDED
