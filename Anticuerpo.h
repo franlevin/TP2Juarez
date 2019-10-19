@@ -1,15 +1,15 @@
-#include "Elementos.h"
+#include "Elemento.h"
 #include "Celula.h"
 #ifndef ANTICUERPO_H_INCLUDED
 #define ANTICUERPO_H_INCLUDED
 
-class anticuerpo: public Elemento
+class Anticuerpo: public Elemento
 {
 
 public:
-        anticuerpo();
-        int get_posX();
-        int get_posY();
+        Anticuerpo(float,float);
+        float get_posX();
+        float get_posY();
         void set_posX(int);
         void set_posY(int);
 };

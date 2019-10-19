@@ -1,21 +1,19 @@
 #include "Celula.h"
-
 Celula::Celula()
 {
     tamanio=0; cantEnzimas=0;cantProteinas=0;
     materialGenetico= true; unicelular = true;
-    posX=0; posY=0;
+    set_posX(0); set_posY(0);
 }
-
-Celula::Celula(int tam, int enz, int prot, bool matgen, bool uni,float x,float y)
+Celula::Celula(float x,float y)
 {
-    tamanio = tam;
-    cantEnzimas = enz;
-    cantProteinas = prot;
-    materialGenetico = matgen;
-    unicelular = uni;
-    posX = x;
-    posY = y;
+    tamanio = rand()%10;
+    cantEnzimas = rand()%10;
+    cantProteinas = rand()%10;
+    materialGenetico = true;
+    unicelular = true;
+    set_posX(x);
+    set_posY(y);
 }
 
 

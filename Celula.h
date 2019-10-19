@@ -1,17 +1,15 @@
 #ifndef CELULA_H_INCLUDED
 #define CELULA_H_INCLUDED
 #include <iostream>
-#include "Elementos.h"
+#include "Elemento.h"
 
 using namespace std;
 
 class Celula : public Elemento
 {
     public:
-        Elemento::posX
-        Elemento::posY
         Celula();
-        Celula(int, int, int, bool, bool);
+        Celula(float,float);
         void set_tamanio(int);
         void set_cantEnzimas(int);
         void set_cantProteinas(int);
